@@ -1,0 +1,9 @@
+/Users/jhoek/GitHub/UncommonSense.Xliff/bin/Debug/netstandard2.0/UncommonSense.Xliff.deps.json
+/Users/jhoek/GitHub/UncommonSense.Xliff/bin/Debug/netstandard2.0/UncommonSense.Xliff.dll
+/Users/jhoek/GitHub/UncommonSense.Xliff/bin/Debug/netstandard2.0/UncommonSense.Xliff.pdb
+/Users/jhoek/GitHub/UncommonSense.Xliff/obj/Debug/netstandard2.0/UncommonSense.Xliff.csprojAssemblyReference.cache
+/Users/jhoek/GitHub/UncommonSense.Xliff/obj/Debug/netstandard2.0/UncommonSense.Xliff.csproj.CoreCompileInputs.cache
+/Users/jhoek/GitHub/UncommonSense.Xliff/obj/Debug/netstandard2.0/UncommonSense.Xliff.AssemblyInfoInputs.cache
+/Users/jhoek/GitHub/UncommonSense.Xliff/obj/Debug/netstandard2.0/UncommonSense.Xliff.AssemblyInfo.cs
+/Users/jhoek/GitHub/UncommonSense.Xliff/obj/Debug/netstandard2.0/UncommonSense.Xliff.dll
+/Users/jhoek/GitHub/UncommonSense.Xliff/obj/Debug/netstandard2.0/UncommonSense.Xliff.pdb
