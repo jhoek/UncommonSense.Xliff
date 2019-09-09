@@ -5,7 +5,7 @@ namespace UncommonSense.Xliff
     public class XliffFile
     {
         internal XliffFile() { }
-        public XliffFile(string sourceLanguage) => SourceLanguage = sourceLanguage;
+
         [XmlAttribute("datatype")] public string DataType { get; set; }
         [XmlAttribute("source-language")] public string SourceLanguage { get; set; }
         [XmlAttribute("target-language")] public string TargetLanguage { get; set; }

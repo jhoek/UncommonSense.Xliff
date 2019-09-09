@@ -15,11 +15,11 @@
                         <Width>60</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
-                        <Label>Transl.</Label>
-                        <Width>7</Width>
+                        <Width>50</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
-                        <Width>50</Width>
+                        <Label>Target State</Label>
+                        <Width>20</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
                         <Width>50</Width>
@@ -33,11 +33,11 @@
                                 <PropertyName>ID</PropertyName>
                             </TableColumnItem>                            
                             <TableColumnItem>
-                                <PropertyName>Translate</PropertyName>
-                            </TableColumnItem>                            
-                            <TableColumnItem>
                                 <PropertyName>Source</PropertyName>
-                            </TableColumnItem>                            
+                            </TableColumnItem>          
+                            <TableColumnItem>
+                                <ScriptBlock>$_.Target.State</ScriptBlock>
+                            </TableColumnItem>                  
                             <TableColumnItem>
                                 <PropertyName>Target</PropertyName>
                             </TableColumnItem>                            
