@@ -1,0 +1,51 @@
+<Configuration>
+    <ViewDefinitions>
+        <View>
+            <Name>Default</Name>
+            <ViewSelectedBy>
+                <TypeName>UncommonSense.Xliff.TranslationUnit</TypeName>
+            </ViewSelectedBy>
+            <TableControl>
+                <TableHeaders>
+                    
+                </TableHeaders>
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>ID</PropertyName>
+                            </TableColumnItem>                            
+                            <TableColumnItem>
+                                <PropertyName>Translate</PropertyName>
+                            </TableColumnItem>                            
+                            <TableColumnItem>
+                                <PropertyName>Source</PropertyName>
+                            </TableColumnItem>                            
+                            <TableColumnItem>
+                                <PropertyName>Target</PropertyName>
+                            </TableColumnItem>                            
+                        </TableColumnItems>
+                    </TableRowEntry>            
+                </TableRowEntries>
+            </TableControl>
+        </View>
+        <View>
+            <Name>Default</Name>
+            <ViewSelectedBy>
+                <TypeName>UncommonSense.Xliff.XliffDocument</TypeName>
+            </ViewSelectedBy>
+            <CustomControl>
+                <CustomEntries>
+                    <CustomEntry>
+                        <CustomItem>
+                            <ExpressionBinding>
+                                <ScriptBlock>$_.TranslationUnits | Format-Table | Out-String</ScriptBlock>
+                                <EnumerateCollection/>
+                            </ExpressionBinding>
+                        </CustomItem>
+                    </CustomEntry>
+                </CustomEntries>
+            </CustomControl>
+        </View>
+    </ViewDefinitions>
+</Configuration>

@@ -12,6 +12,7 @@ namespace UncommonSense.Xliff
         [XmlElement("group", typeof(XliffGroup))]
         [XmlElement("trans-unit", typeof(XliffTranslationUnit))]
         public Collection<XliffContentNode> Contents { get; } = new Collection<XliffContentNode>();
+        [XmlElement("note")] public Collection<XliffNote> Notes { get; set; }
         public IEnumerable<XliffTranslationUnit> TranslationUnits => Contents.OfType<XliffTranslationUnit>();
         public IEnumerable<XliffGroup> Groups => Contents.OfType<XliffGroup>();
     }

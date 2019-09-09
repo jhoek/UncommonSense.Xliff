@@ -2,10 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>output\UncommonSense.Xliff</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="PowerShellStandard.Library" Version="5.1.1" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="cp $(ProjectDir)manifest.psd1 $(TargetDir)$(TargetName).psd1" />
+      <Exec Command="cp $(ProjectDir)format.ps1xml $(TargetDir)$(TargetName).format.ps1xml" />
+  </Target>
 </Project>
