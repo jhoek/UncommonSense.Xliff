@@ -1,7 +1,13 @@
-Import-Module -Name "$PSScriptRoot/output/UncommonSense.Xliff/UncommonSense.Xliff.psd1" -Force
+# Import the original file, store in variable $Doc and send to console
+Import-Xliff -Path ~/Dropbox/translation-nl-NL.xlf -OutVariable Doc
 
-Import-Xliff -Path ~/Dropbox/translation-nl-NL.xlf -OutVariable Doc `
-    #| ForEach-Object { $_.TranslationUnits } `
-#| ForEach-Object { $_.Target = $_.Source.ToUpperInvariant() }
+# Set the target of each translation unit to the uppercase of its source
+$Doc `
+| ForEach-Object { $_.TranslationUnits } `
+| ForEach-Object { $_.Target = $_.Source.ToUpperInvariant() }
 
-#$Doc | Export-Xliff -Path ~\Desktop\output.xml
+# Send the updated translation to the console
+$Doc
+
+# Export the updated translation 
+$Doc | Export-Xliff -Path ~\Desktop\output.xml

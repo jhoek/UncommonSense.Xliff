@@ -1,16 +1,33 @@
 <Configuration>
+    <DefaultSettings>
+        <ShowError/>
+        <DisplayError/>
+    </DefaultSettings>
     <ViewDefinitions>
         <View>
             <Name>Default</Name>
             <ViewSelectedBy>
-                <TypeName>UncommonSense.Xliff.TranslationUnit</TypeName>
+                <TypeName>UncommonSense.Xliff.XliffTranslationUnit</TypeName>
             </ViewSelectedBy>
             <TableControl>
                 <TableHeaders>
-                    
+                    <TableColumnHeader>
+                        <Width>60</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>Transl.</Label>
+                        <Width>7</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>50</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>50</Width>
+                    </TableColumnHeader>
                 </TableHeaders>
                 <TableRowEntries>
                     <TableRowEntry>
+                        <Wrap/>
                         <TableColumnItems>
                             <TableColumnItem>
                                 <PropertyName>ID</PropertyName>
@@ -40,7 +57,6 @@
                         <CustomItem>
                             <ExpressionBinding>
                                 <ScriptBlock>$_.TranslationUnits | Format-Table | Out-String</ScriptBlock>
-                                <EnumerateCollection/>
                             </ExpressionBinding>
                         </CustomItem>
                     </CustomEntry>
