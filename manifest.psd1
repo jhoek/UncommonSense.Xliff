@@ -12,7 +12,7 @@
     RootModule        = 'UncommonSense.Xliff.dll'
 
     # Version number of this module.
-    ModuleVersion     = '0.0.2'
+    ModuleVersion     = '0.0.3'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -72,7 +72,7 @@
     FunctionsToExport = '*'
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport   = 'Import-Xliff', 'Export-Xliff'
+    CmdletsToExport   = 'New-Xliff', 'Import-Xliff', 'Export-Xliff'
 
     # Variables to export from this module
     VariablesToExport = '*'
